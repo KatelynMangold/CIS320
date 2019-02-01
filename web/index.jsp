@@ -11,7 +11,7 @@
   <title>Sample JSP Page</title>
 </head>
 <body>
-<h1>My Sample Page</h1>
+<h1>Sample</h1>
 <p>This is great!</p>
 </body>
 </html>

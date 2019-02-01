@@ -1,3 +1,4 @@
+
 package edu.simpson.cis320;
 
 import java.sql.Connection;
@@ -10,17 +11,20 @@ import java.util.List;
 import java.util.LinkedList;
 import java.sql.PreparedStatement;
 
-public class PersonDAO {
-    /**
+
+/**
      * Data Access Object for the Person table/class
      */
+
     public class PersonDAO {
         private final static Logger log = Logger.getLogger(PersonDAO.class.getName());
 
-        /**
+
+/**
          * Get a list of the people in the database.
          * @return Returns a list of instances of the People class.
          */
+
         public static List<Person> getPeople() {
             log.log(Level.FINE, "Get people");
 
@@ -82,3 +86,4 @@ public class PersonDAO {
         }
 
     }
+
