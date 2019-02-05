@@ -8,7 +8,7 @@
               username="cis320"
               password="KAQ4gJVX"
               driverClassName="com.mysql.jdbc.Driver"
-              url="jdbc:mysql:/cis320.cbrzpi8j0nqw.us-east-2.rds.amazonaws.com:3306/cis320"
+              url="jdbc:mysql://cis320.cbrzpi8j0nqw.us-east-2.rds.amazonaws.com:3306/cis320"
               maxActive="15"
               maxIdle="3"
               testOnBorrow="true"
