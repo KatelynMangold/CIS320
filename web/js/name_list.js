@@ -17,3 +17,7 @@ function updateTable()
     })
 }
 updateTable();
+
+
+var fromaddItem = $('#addItem');
+fromaddItem.on("click", jqueryGetButtonAction);
