@@ -8,15 +8,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28e3f232-be1a-4f34-a815-7354ad649afb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/edu/simpson/cis320/NameListEdit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/CIS_320_First_Project_war/CIS 320 First Project_war.war" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CIS_320_First_Project_war/CIS 320 First Project_war.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/simpson/cis320/FormTestCheckboxServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/simpson/cis320/FormTestFileServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/simpson/cis320/FormTestJSONServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/simpson/cis320/FormTestServlet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/edu/simpson/cis320/TestBusinessObject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/form_demo.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/js/form_demo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/CIS_320_First_Project_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/CIS_320_First_Project_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/edu/simpson/cis320/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/edu/simpson/cis320/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/js/name_list.js" beforeDir="false" afterPath="$PROJECT_DIR$/web/js/name_list.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/name_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/name_list.html" afterDir="false" />
     </list>
@@ -29,23 +26,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/name_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="112" column="6" lean-forward="true" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
-              <folding>
-                <element signature="e#2602#2609#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="1530">
+              <caret line="90" column="56" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/name_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-535">
-              <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+            <state relative-caret-position="424">
+              <caret line="175" column="4" selection-start-line="175" selection-start-column="4" selection-end-line="175" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -53,8 +47,50 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="612">
+              <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/NameListEdit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/PersonDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -93,7 +129,6 @@
         <option value="$PROJECT_DIR$/src/edu/simpson/cis320/NameListGit.java" />
         <option value="$PROJECT_DIR$/web/META-INF/context.xml" />
         <option value="$PROJECT_DIR$/src/edu/simpson/cis320/Person.java" />
-        <option value="$PROJECT_DIR$/src/edu/simpson/cis320/PersonDAO.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/index.html" />
         <option value="$PROJECT_DIR$/web/index.html" />
         <option value="$PROJECT_DIR$/web/form_demo.html" />
@@ -102,10 +137,12 @@
         <option value="$PROJECT_DIR$/src/edu/simpson/cis320/FormTestJSONServlet.java" />
         <option value="$PROJECT_DIR$/src/edu/simpson/cis320/TestBusinessObject.java" />
         <option value="$PROJECT_DIR$/src/edu/simpson/cis320/FormTestCheckboxServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/edu/simpson/cis320/FormTestFileServlet.java" />
-        <option value="$PROJECT_DIR$/web/js/name_list.js" />
         <option value="$PROJECT_DIR$/web/name_list.html" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/edu/simpson/cis320/NameListEdit.java" />
+        <option value="$PROJECT_DIR$/src/edu/simpson/cis320/PersonDAO.java" />
+        <option value="$PROJECT_DIR$/web/js/name_list.js" />
       </list>
     </option>
   </component>
@@ -117,10 +154,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -128,6 +164,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -135,29 +172,6 @@
             <path>
               <item name="CIS320" type="b2602c69:ProjectViewProjectNode" />
               <item name="CIS320" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CIS320" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CIS320" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CIS320" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CIS320" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CIS320" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CIS320" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CIS320" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CIS320" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="CIS_320_First_Project_war" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CIS320" type="b2602c69:ProjectViewProjectNode" />
@@ -179,22 +193,21 @@
               <item name="CIS320" type="b2602c69:ProjectViewProjectNode" />
               <item name="CIS320" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550553193642" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551308413196" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="E:/DataStruc/IntelliJ" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3275862" />
@@ -395,27 +408,31 @@
       <workItem from="1550193639278" duration="2005000" />
       <workItem from="1550199631666" duration="70000" />
       <workItem from="1550503142763" duration="13030000" />
-      <workItem from="1550547301464" duration="5710000" />
+      <workItem from="1550547301464" duration="6227000" />
+      <workItem from="1550632160274" duration="80000" />
+      <workItem from="1551144350498" duration="1138000" />
+      <workItem from="1551296589988" duration="45000" />
+      <workItem from="1551303103837" duration="5828000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60257000" />
+    <option name="totallyTimeSpent" value="67865000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8477273" visible="true" weight="0.020134227" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.841716" visible="true" weight="0.16577181" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.15227273" side_tool="true" weight="0.20067114" />
+      <window_info id="Web" order="7" sideWeight="0.15828402" side_tool="true" visible="true" weight="0.16577181" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295129" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.04249292" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -440,17 +457,17 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8477273" visible="true" weight="0.20067114" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8440171" visible="true" weight="0.24687934" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" sideWeight="0.15227273" side_tool="true" visible="true" weight="0.20067114" />
+      <window_info id="Web" order="7" sideWeight="0.15598291" side_tool="true" visible="true" weight="0.24687934" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.37677053" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3295129" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.04249292" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -488,16 +505,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/out/artifacts/CIS_320_First_Project_war_exploded/index.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/PersonDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="71" column="39" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/index.html" />
     <entry file="file://$PROJECT_DIR$/CIS 320 First Project.iml">
@@ -510,26 +517,12 @@
         <state relative-caret-position="-204" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/form_demo.html" />
     <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/FormTestServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/TestBusinessObject.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/FormTestJSONServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/FormTestCheckboxServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/FormTestFileServlet.java" />
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="27" column="77" selection-start-line="27" selection-start-column="77" selection-end-line="27" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/javascript_assignment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -569,27 +562,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/NameListEdit.java" />
     <entry file="file://$PROJECT_DIR$/web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        <state relative-caret-position="612">
+          <caret line="36" column="23" lean-forward="true" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/name_list.js">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-535">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        <state relative-caret-position="442">
+          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/name_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="112" column="6" lean-forward="true" selection-start-line="112" selection-start-column="6" selection-end-line="112" selection-end-column="6" />
+        <state relative-caret-position="1530">
+          <caret line="90" column="56" selection-start-line="90" selection-start-column="56" selection-end-line="90" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/PersonDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="120" lean-forward="true" selection-start-line="120" selection-end-line="120" />
           <folding>
-            <element signature="e#2602#2609#1" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/simpson/cis320/NameListEdit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="32" column="31" lean-forward="true" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/name_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="175" column="4" selection-start-line="175" selection-start-column="4" selection-end-line="175" selection-end-column="4" />
         </state>
       </provider>
     </entry>

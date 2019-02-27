@@ -64,6 +64,7 @@ saveButton.on("click", saveChanges);
 
 // Function to validate
 function validateFunction() {
+    var valid = true;
     // Get the field
     var firstName = $('#firstName');
     var lastName = $('#lastName');
@@ -84,6 +85,7 @@ function validateFunction() {
         $('#firstName').removeClass("is-valid");
         $('#firstName').addClass("is-invalid");
         console.log("invalid first name");
+        valid = false;
     }
 
     if (nameReg.test(lastName.val())) {
@@ -94,6 +96,7 @@ function validateFunction() {
         $('#lastName').removeClass("is-valid");
         $('#lastName').addClass("is-invalid");
         console.log("invalid last name");
+        valid = false;
     }
 
     if (emailReg.test(email.val())) {
@@ -104,6 +107,7 @@ function validateFunction() {
         $('#email').removeClass("is-valid");
         $('#email').addClass("is-invalid");
         console.log("invalid email");
+        valid = false;
     }
     if (phoneReg.test(phone.val())) {
         $('#result').text("Ok");
@@ -114,8 +118,9 @@ function validateFunction() {
         $('#phone').removeClass("is-valid");
         $('#phone').addClass("is-invalid");
         console.log("invalid phone");
+        valid = false;
     }
-    if (birthdayReg.test(birthday.val)) {
+    if (birthdayReg.test(birthday.val())) {
         $('#result').text("Ok");
         $('#birthday').removeClass("is-invalid");
         $('#birthday').addClass("is-valid");
@@ -125,8 +130,52 @@ function validateFunction() {
         $('#birthday').removeClass("is-valid");
         $('#birthday').addClass("is-invalid");
         console.log("invalid birthday");
+        valid = false;
     }
 
+    if(valid){
+        var jsonData = {
+            "first":firstName,
+            "last":lastName,
+            "email":email,
+            "phone":phone,
+            "birthday":birthday
+        };
 
+        jqueryPostJSONAction(jsonData);
+    }
+}
+
+function jqueryPostJSONAction(jsonData) {
+
+    var url = "api/name_list_edit";
+
+    $.ajax({
+        type: 'POST',
+        url: url,
+        data: JSON.stringify(jsonData),
+        success: function(dataFromServer) {
+            console.log(dataFromServer);
+            refreshFields();
+        },
+        contentType: "application/json",
+        dataType: 'text'
+    });
+
+}
+function refreshFields() {
+    for(var i = $("#datatable tr").length-1; i > 0 ; i--) {
+
+        $("#datatable tr")[i].remove();
+
+    }
+
+    $('#myModal').modal('hide');
+
+    updateTable();
+    
+
+    //$('#datatable tr').remove();
+    //updateTable();
 }
 
