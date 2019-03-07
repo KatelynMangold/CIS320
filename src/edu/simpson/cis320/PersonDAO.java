@@ -109,7 +109,7 @@ import java.sql.PreparedStatement;
         try {
             conn = DBHelper.getConnection();
 
-            String sql = "INSERT INTO person (firstname, lastname, email, phone, birthday) VALUES (?, ?, ?, ?, ?);";
+            String sql = "INSERT INTO person (first, last, email, phone, birthday) VALUES (?, ?, ?, ?, ?);";
             stmt = conn.prepareStatement(sql);
             stmt.setString(1, person.getFirst());
             stmt.setString(2, person.getLast());

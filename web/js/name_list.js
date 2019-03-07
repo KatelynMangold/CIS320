@@ -65,7 +65,6 @@ saveButton.on("click", saveChanges);
 // Function to validate
 function validateFunction() {
     var valid = true;
-    // Get the field
     var firstName = $('#firstName');
     var lastName = $('#lastName');
     var email = $('#email');
@@ -135,11 +134,11 @@ function validateFunction() {
 
     if(valid){
         var jsonData = {
-            "first":firstName,
-            "last":lastName,
-            "email":email,
-            "phone":phone,
-            "birthday":birthday
+            "first":firstName.val(),
+            "last":lastName.val(),
+            "email":email.val(),
+            "phone":phone.val(),
+            "birthday":birthday.val()
         };
 
         jqueryPostJSONAction(jsonData);
@@ -164,18 +163,9 @@ function jqueryPostJSONAction(jsonData) {
 
 }
 function refreshFields() {
-    for(var i = $("#datatable tr").length-1; i > 0 ; i--) {
-
-        $("#datatable tr")[i].remove();
-
-    }
 
     $('#myModal').modal('hide');
-
     updateTable();
-    
 
-    //$('#datatable tr').remove();
-    //updateTable();
 }
 
