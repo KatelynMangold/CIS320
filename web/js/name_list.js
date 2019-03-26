@@ -1,16 +1,16 @@
 function updateTable()
 {
-
     var url = "api/name_list_get";
 
     $.getJSON(url, null, function(json_result)
+
     {
-        // json_result is an object. You can set a breakpoint, or print
-        // it to see the fields. Specifically, it is an array of objects.
-        // Here we loop the array and print the first name.
+
         for (var i = 0; i < json_result.length; i++) {
             var phone = json_result[i].phone;
-            var myPhone = phone.substring(0,3) + "-" + phone.substring(3,6) + "-" + phone.substring(6,10);
+            phone = phone.replace(/-/g, "");
+            var myPhone = phone.substring(0, 3) + "-" + phone.substring(3, 6) + "-" + phone.substring(6, 10);
+
             $('#datatable tr:first').after('<tr>' +
                 '<td>' + json_result[i].id + '</td>' +
                 '<td>' + json_result[i].first + '</td>' +
@@ -18,14 +18,36 @@ function updateTable()
                 '<td>' + json_result[i].email + '</td>' +
                 '<td>' + myPhone + '</td>' +
                 '<td>' + json_result[i].birthday + '</td>' +
+                '<td><button type="button" name="delete" ' + 'class="deleteButton btn" ' + 'value="' + json_result[i].id +
+                '">Delete</button>' + '</td>' +
                 '</tr>');
-
         }
-        console.log("Done");
+
+        var buttons = $(".deleteButton");
+        buttons.on("click", deleteItem);
     });
+
 }
 
 updateTable();
+
+function deleteItem(e) {
+    //console.log("Delete");
+    //console.debug(e.target.value);
+    var jsonId = {"id": e.target.value};
+
+    var url = "api/name_list_delete";
+    $.ajax({
+        type: 'POST',
+        url: url,
+        data: JSON.stringify(jsonId),
+        success: function (dataFromServer) {
+            refreshFields();
+        },
+        contentType: "application/json",
+        dataType: 'text'
+    });
+}
 
 function showDialogAdd() {
     console.log("Opening add item dialog");
@@ -164,8 +186,11 @@ function jqueryPostJSONAction(jsonData) {
 }
 function refreshFields() {
 
-    $('#myModal').modal('hide');
-    updateTable();
+    for(var i = $("#datatable tr").length-1; i > 0 ; i--) {
+        $("#datatable tr")[i].remove();
+    }
+        $('#myModal').modal('hide');
+        updateTable();
 
 }
 
