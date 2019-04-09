@@ -20,11 +20,16 @@ function updateTable()
                 '<td>' + json_result[i].birthday + '</td>' +
                 '<td><button type="button" name="delete" ' + 'class="deleteButton btn" ' + 'value="' + json_result[i].id +
                 '">Delete</button>' + '</td>' +
+                '<td><button type="button" name="edit" class="editButton btn" value="' + json_result[i].id + '"'
+                +'>Edit</button></td>' +
                 '</tr>');
         }
 
         var buttons = $(".deleteButton");
         buttons.on("click", deleteItem);
+
+        var ebuttons = $(".editButton");
+        ebuttons.on("click", editItem);
     });
 
 }
@@ -165,6 +170,39 @@ function validateFunction() {
 
         jqueryPostJSONAction(jsonData);
     }
+}
+
+function editItem(e){
+
+    $('#id').removeClass("is-valid");
+    $('#firstName').removeClass("is-valid");
+    $('#lastName').removeClass("is-valid");
+    $('#email').removeClass("is-valid");
+    $('#phone').removeClass("is-valid");
+    $('#birthday').removeClass("is-valid");
+    $('#id').removeClass("is-invalid");
+    $('#firstName').removeClass("is-invalid");
+    $('#lastName').removeClass("is-invalid");
+    $('#email').removeClass("is-invalid");
+    $('#phone').removeClass("is-invalid");
+    $('#birthday').removeClass("is-invalid");
+
+    var id = e.target.value;
+    var firstName = e.target.parentNode.parentNode.querySelectorAll("td")[1].innerHTML;
+    var lastName = e.target.parentNode.parentNode.querySelectorAll("td")[2].innerHTML;
+    var phone = e.target.parentNode.parentNode.querySelectorAll("td")[4].innerHTML;
+    var email = e.target.parentNode.parentNode.querySelectorAll("td")[3].innerHTML;
+    var birthday = e.target.parentNode.parentNode.querySelectorAll("td")[5].innerHTML;
+
+    $('#id').val(id);
+    $('#firstName').val(firstName);
+    $('#lastName').val(lastName);
+    $('#phone').val(phone);
+    $('#email').val(email);
+    $('#birthday').val(birthday);
+
+    $('#myModal').modal('show');
+
 }
 
 function jqueryPostJSONAction(jsonData) {
