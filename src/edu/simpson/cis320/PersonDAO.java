@@ -99,7 +99,7 @@ import java.sql.PreparedStatement;
     public static void insertPerson(Person person) {
         Connection conn = null;
         PreparedStatement stmt = null;
-        System.out.println(person.getPhone());
+        //System.out.println(person.getPhone());
 
         try {
             conn = DBHelper.getConnection();
@@ -138,6 +138,7 @@ import java.sql.PreparedStatement;
 
         Connection conn = null;
         PreparedStatement stmt = null;
+
         try {
             conn = DBHelper.getConnection();
 
@@ -182,7 +183,7 @@ import java.sql.PreparedStatement;
             stmt.setString(5, person.getBirthday());
             stmt.setString(6, person.getId() + "");
 
-            stmt.executeUpdate();
+            stmt.execute();
 
         } catch (SQLException se) {
             log.log(Level.SEVERE, "SQL Error", se);

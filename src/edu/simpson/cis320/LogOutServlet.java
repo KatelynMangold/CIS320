@@ -13,20 +13,11 @@ import java.io.PrintWriter;
 public class LogOutServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-        // Set up our response
         response.setContentType("text/plain");
         PrintWriter out = response.getWriter();
 
-        // Get the data passed in from the request string
-        //String sessionKey = request.getParameter("sessionKey");
-        //String sessionValue = request.getParameter("sessionValue");
-
-        // Get a session object so we can get/set items in our session.
-        // This will automatically create a JSESSIONID cookie for us.
-        // It also must happen BEFORE we try writing output to the user.
         HttpSession session = request.getSession();
 
-        // Associate, in server memory, a key/value pair.
         session.invalidate();
 
         out.println("Log Out");

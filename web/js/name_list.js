@@ -3,9 +3,7 @@ function updateTable()
     var url = "api/name_list_get";
 
     $.getJSON(url, null, function(json_result)
-
     {
-
         for (var i = 0; i < json_result.length; i++) {
             var phone = json_result[i].phone;
             phone = phone.replace(/-/g, "");
@@ -36,26 +34,8 @@ function updateTable()
 
 updateTable();
 
-function deleteItem(e) {
-    //console.log("Delete");
-    //console.debug(e.target.value);
-    var jsonId = {"id": e.target.value};
-
-    var url = "api/name_list_delete";
-    $.ajax({
-        type: 'POST',
-        url: url,
-        data: JSON.stringify(jsonId),
-        success: function (dataFromServer) {
-            refreshFields();
-        },
-        contentType: "application/json",
-        dataType: 'text'
-    });
-}
-
 function showDialogAdd() {
-    console.log("Opening add item dialog");
+    console.log("Add item dialog");
 
     $('#id').val("");
     $('#firstName').val("");
@@ -64,6 +44,7 @@ function showDialogAdd() {
     $('#phone').val("");
     $('#birthday').val();
 
+    $('#id').removeClass("is-valid");
     $('#firstName').removeClass("is-valid");
     $('#lastName').removeClass("is-valid");
     $('#email').removeClass("is-valid");
@@ -82,7 +63,7 @@ var addItemButton = $('#addItem');
 addItemButton.on("click", showDialogAdd)
 
 function saveChanges() {
-    console.log("Changes have been saved.")
+    console.log("Changes are saved.")
     validateFunction();
 }
 
@@ -203,6 +184,22 @@ function editItem(e){
 
     $('#myModal').modal('show');
 
+}
+
+function deleteItem(e) {
+    var jsonId = {"id": e.target.value};
+
+    var url = "api/name_list_delete";
+    $.ajax({
+        type: 'POST',
+        url: url,
+        data: JSON.stringify(jsonId),
+        success: function (dataFromServer) {
+            refreshFields();
+        },
+        contentType: "application/json",
+        dataType: 'text'
+    });
 }
 
 function jqueryPostJSONAction(jsonData) {
